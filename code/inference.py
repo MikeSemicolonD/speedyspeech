@@ -53,7 +53,8 @@ melgan.eval(inference=False)
 
 print('Processing text')
 txt_processor = TextProcessor(HPText.graphemes, phonemize=HPText.use_phonemes)
-text = [t.strip() for t in sys.stdin.readlines()]
+test = ['This is a test.\n','It would probably be best to put this into a text file.\n'];
+text = [t.strip() for t in test]
 
 phonemes, plen = txt_processor(text)
 # append more zeros - avoid cutoff at the end of the largest sequence

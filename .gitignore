@@ -12,3 +12,4 @@ audios/
 *.pt
 *.pth
 generate_index.py
+env/
